@@ -1,0 +1,30 @@
+.pics{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+@media (min-width: 800px){
+    .pics{
+        background-color: green;
+    }
+
+    img:nth-child(6){
+        width: auto;
+        grid-column: 1/ -1;
+    }
+}
+
+@media (min-width: 1000px){
+    .pics{
+        background-color: purple;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    img:nth-child(3){
+        width: auto;
+        grid-column: 1/ -1;
+    }
+}

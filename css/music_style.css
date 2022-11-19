@@ -1,0 +1,23 @@
+.pics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: purple;
+    padding: 10px;
+}
+
+@media (min-width: 800px){
+    .pics{
+        background-color: lightblue;
+        gap: 20px;
+    }
+
+}
+
+@media (min-width: 1000px){
+    .pics{
+        background-color: coral;
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+}
