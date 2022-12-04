@@ -3,21 +3,82 @@
     flex-direction: row;
     flex-wrap: wrap;
     background-color: purple;
-    padding: 10px;
 }
 
-@media (min-width: 800px){
+figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    width:250px;
+}
+
+figcaption {
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 100%;
+    }
+
     .pics{
         background-color: lightblue;
         gap: 20px;
     }
+
+    figcaption{
+        color: black;
+    }
+
+    figure{
+        border: dotted black;
+    }
+
+    figure:nth-child(3){
+        order: -2;
+    }
+
+    figure:nth-child(5){
+        order: 5;
+    }
+
+    figure:nth-child(7){
+        order: -1;
+    }
+
+
 
 }
 
 @media (min-width: 1000px){
     .pics{
         background-color: coral;
-        flex-flow: column wrap;
         justify-content: space-around;
     }
+
+    figure{
+        border: double black;
+    }
+
+    figure:nth-child(4){
+        order: -3;
+    }
+
+    figure:nth-child(4){
+        order: 2;
+    }
+
+    figure:nth-child(2){
+        order: 4;
+    }
+
 }
