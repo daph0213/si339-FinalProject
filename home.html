@@ -1,0 +1,149 @@
+<!-- <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">    
+    <link rel = "stylesheet" href = "css/style.css">
+    <script src = "script/script.js"></script>
+    <title>Daphney Cajuste</title>
+  </head>
+  <body>
+    <a href="#main"> Skip to Main Content</a>
+    <header>
+        // nav  
+        <nav>
+            <a href="#"  onclick="LogoLinkClicked(event);return false;" class="nav-logo">
+                <img src="images/wallpaper.jpg" alt="care free black girl logo" />
+            </a>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href="about.html">About Me Page</a></li>
+                <li><a href="music.html">Music Page</a></li>
+            </ul>
+        </nav>
+        //end of nav 
+        <h1>Daphney Cajuste</h1>
+</header>
+
+
+</body>
+</html>
+     -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+         
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="">
+         
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="css/html5reset.css">    
+    <link rel = "stylesheet" href = "css/style.css">
+ 
+    <title>Daphney Cajuste</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <a class="skip" href="#main"> Skip to Main Content</a>
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Daphney</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate"></i> Home
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">
+                <i class="uil uil-user"></i> About
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="music.html" class="nav__link">
+                <i class="uil uil-headphones"></i>Music 
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <!-- Theme change buttons -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+    
+        </div>
+      </nav>
+        
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main" id="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+          <!-- <div class="home__container container grid"> -->
+            <div class="home__content grid">
+
+              <!-- linkedin and github icon -->
+              <div class="home__social">
+                <a href="https://www.linkedin.com/in/daphney-cajuste-b156a1198/" target="_blank" class="home__social-icon">
+                  <i class="uil uil-linkedin-alt"></i> linkedin
+                </a>
+                <a href="https://github.com/daph0213" target="_blank" class="home__social-icon">
+                  <i class="uil uil-github-alt"></i> github
+                </a>
+              </div>
+
+              <!-- BLOB -->
+              <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0" mask-type="alpha">
+                    <path fill="#FF0066" d="M45.3,-37C53.5,-25.9,51.2,-7.4,47.4,11.4C43.6,30.1,38.2,49.1,23.5,60.6C8.9,72.2,-15,76.4,-32,67.7C-49.1,59,-59.4,37.5,-64.6,14.7C-69.8,-8,-70,-32,-58.4,-43.8C-46.7,-55.7,-23.4,-55.4,-2.4,-53.5C18.6,-51.6,37.2,-48,45.3,-37Z" transform="translate(100 100)" />
+                  </mask>
+                  <g mask="url(#mask0)">
+                    <path fill="#FF0066" d="M45.3,-37C53.5,-25.9,51.2,-7.4,47.4,11.4C43.6,30.1,38.2,49.1,23.5,60.6C8.9,72.2,-15,76.4,-32,67.7C-49.1,59,-59.4,37.5,-64.6,14.7C-69.8,-8,-70,-32,-58.4,-43.8C-46.7,-55.7,-23.4,-55.4,-2.4,-53.5C18.6,-51.6,37.2,-48,45.3,-37Z" transform="translate(100 100)" />
+                    <image class="home__blob-img" x="42" y="68" xlink:href="images/Subject.png"/>
+                  </g>
+                </svg>
+              </div> 
+
+              <div class="home__data">
+                <h1 class="home__title">Hi, I am Daphney</h1>
+                <h2>Software Developer</h2>
+                <p>I am a Senior studying Computer Science at the University of Michigan.</p>
+
+              </div>
+            </div>
+            
+          <!-- </div> -->
+        </section>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Daphney</h1>
+            <span class="footer__subtitle">Software Developer</span>
+          </div>
+        </div>
+      </div>      
+    </footer>
+
+    <!--==================== MAIN JS ====================-->
+    <script src = "script/script.js"></script>
+  </body>
+</html>
